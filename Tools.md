@@ -7,6 +7,15 @@
   - /usr/lib/jvm/java-1.8.0-openjdk-amd64
 
 ## Jenkins
+- 构建伟大，无所不能
+- Jenkins是开源CI&CD软件领导者， 提供超过1000个插件来支持构建、部署、自动化， 满足任何项目的需要。
+  - 持续集成和持续交付: 作为一个可扩展的自动化服务器，Jenkins 可以用作简单的 CI 服务器，或者变成任何项目的持续交付中心。
+  - 简易安装: Jenkins 是一个基于 Java 的独立程序，可以立即运行，包含 Windows、Mac OS X 和其他类 Unix 操作系统。
+  - 配置简单: Jenkins 可以通过其网页界面轻松设置和配置，其中包括即时错误检查和内置帮助。
+  - 插件: 通过更新中心中的 1000 多个插件，Jenkins 集成了持续集成和持续交付工具链中几乎所有的工具。
+  - 扩展: Jenkins 可以通过其插件架构进行扩展，从而为 Jenkins 可以做的事提供几乎无限的可能性。
+  - 分布式: Jenkins 可以轻松地在多台机器上分配工作，帮助更快速地跨多个平台推动构建、测试和部署。
+- [文档中心 https://www.jenkins.io/zh/doc/](https://www.jenkins.io/zh/doc/)
 - Docker Installation
 
 ```
@@ -52,3 +61,59 @@ services:
 
 - 账户信息
   - jadmin/Ken123
+
+
+## Redmine
+- Redmine 是一个灵活的项目管理 web 应用程序。它使用 Ruby on Rails 框架编写，是跨平台和跨数据库的。
+- Redmine 是开源的，根据 GNU 通用公共许可证v2（GPL）的条款发布。
+- 功能特点
+  - 支持多个项目、子项目
+  - 灵活的基于角色的访问权限控制
+  - 灵活的问题跟踪系统
+  - 甘特图和日历
+  - 新闻、文档和文件管理
+  - 提要和电子邮件通知
+  - 项目中可添加 Wiki
+  - 项目中可添加论坛
+  - 任务工时跟踪
+  - 可为问题、耗时、项目、版本、文档、用户组、活动（时间跟踪）、问题优先级等增加自定义字段
+  - SCM集成（SVN、CVS、Git、Mercurial 和 Bazaar）
+  - 支持通过电子邮件创建问题
+  - 支持多个 LDAP 身份验证
+  - 支持用户自主注册
+  - 支持多种语言
+  - 支持多种类型数据库
+- Redmine安装
+```
+version: '3.1'
+services:
+  postgres:
+    image: postgres:latest
+    restart: always
+    networks:
+      - redmine
+    volumes:
+      - /home/<your_path_here>/data/postgres-data:/var/lib/postgresql/data
+    environment:
+      - 'POSTGRES_PASSWORD=<your_password_here>'
+      - 'POSTGRES_DB=redmine'
+  redmine:
+    image: redmine:latest
+    restart: always
+    networks:
+      - redmine
+    volumes:
+      - /home/<your_path_here>/data/redmine-data:/usr/src/redmine/files
+    ports:
+      - 10080:3000
+    environment:
+      - 'REDMINE_DB_POSTGRES=postgres'
+      - 'REDMINE_DB_DATABASE=redmine'
+      - 'REDMINE_DB_PASSWORD=<your_password_here>'
+volumes:
+  postgres-data:
+  redmine-data:
+networks:
+  redmine:
+    driver: bridge
+```
