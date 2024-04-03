@@ -4,7 +4,7 @@
 - Jenkins: 开源CI&CD, 构建伟大，无所不能
 - Zentaopms: 禅道项目管理/文档 [docker compose yaml](./TOOLS-zentao.md)
 - Bandicam: 录视频录教程，备用（OBS，Captura，ApowerREC，QQ，Win+G快捷键，N卡录制）
-
+- github: 代码仓库/代码管理， [仓库地址](https://github.com/chipabs)
  
 # OS
 - ubuntu 20
