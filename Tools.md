@@ -2,7 +2,7 @@
 - Ubuntu 20: 操作系统
 - Docker & Docker Compose: 部署和运行环境，容器编排
 - Jenkins: 开源CI&CD, 构建伟大，无所不能
-- Redmine: 项目管理，文档
+- Zentaopms: 禅道项目管理/文档 [docker compose yaml](./TOOLS-zentao.md)
 - Bandicam: 录视频录教程，备用（OBS，Captura，ApowerREC，QQ，Win+G快捷键，N卡录制）
 
  
