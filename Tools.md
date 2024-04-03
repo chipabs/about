@@ -42,84 +42,12 @@ CONTAINER ID   IMAGE                 COMMAND                  CREATED          S
 ```
 
 - docker compose up -d
-
-```
-services:
-  jenkins:
-    image: "jenkins/jenkins:lts-jdk17"
-    #image: "jenkinsci/blueocean:latest"
-    user: "root"
-    privileged: "true"
-    restart: "always"
-    container_name: "jenkins"
-    volumes:
-      - /usr/local/jenkins:/var/jenkins_home
-      - /var/run/docker.sock:/var/run/docker.sock
-      - /usr/bin/docker:/user/bin/docker
-      - /usr/lib/x86_64-linux-gnu/libltdl.so.7:/usr/lib/x86_64-linux-gnu/libltdl.so.7
-      - /etc/docker/daemon.json:/etc/docker/daemon.json
-      - /usr/lib/jvm/java-1.8.0-openjdk-amd64:/usr/local/java/jdk1.8.0_161
-    ports:
-      - "8080:8080"
-      - "50000:50000"
-
-```
-
-- 账户信息
-  - jadmin/Ken123
+  - [docker-compose.yaml](./TOOLS-jenkins-docker-compose.yaml)
+  - 账户信息: jadmin/Ken123
 
 
-## Redmine
-- Redmine 是一个灵活的项目管理 web 应用程序。它使用 Ruby on Rails 框架编写，是跨平台和跨数据库的。
-- Redmine 是开源的，根据 GNU 通用公共许可证v2（GPL）的条款发布。
-- 功能特点
-  - 支持多个项目、子项目
-  - 灵活的基于角色的访问权限控制
-  - 灵活的问题跟踪系统
-  - 甘特图和日历
-  - 新闻、文档和文件管理
-  - 提要和电子邮件通知
-  - 项目中可添加 Wiki
-  - 项目中可添加论坛
-  - 任务工时跟踪
-  - 可为问题、耗时、项目、版本、文档、用户组、活动（时间跟踪）、问题优先级等增加自定义字段
-  - SCM集成（SVN、CVS、Git、Mercurial 和 Bazaar）
-  - 支持通过电子邮件创建问题
-  - 支持多个 LDAP 身份验证
-  - 支持用户自主注册
-  - 支持多种语言
-  - 支持多种类型数据库
-- Redmine安装
-```
-version: '3.1'
-services:
-  postgres:
-    image: postgres:latest
-    restart: always
-    networks:
-      - redmine
-    volumes:
-      - /home/<your_path_here>/data/postgres-data:/var/lib/postgresql/data
-    environment:
-      - 'POSTGRES_PASSWORD=<your_password_here>'
-      - 'POSTGRES_DB=redmine'
-  redmine:
-    image: redmine:latest
-    restart: always
-    networks:
-      - redmine
-    volumes:
-      - /home/<your_path_here>/data/redmine-data:/usr/src/redmine/files
-    ports:
-      - 10080:3000
-    environment:
-      - 'REDMINE_DB_POSTGRES=postgres'
-      - 'REDMINE_DB_DATABASE=redmine'
-      - 'REDMINE_DB_PASSWORD=<your_password_here>'
-volumes:
-  postgres-data:
-  redmine-data:
-networks:
-  redmine:
-    driver: bridge
-```
+
+## Zentaopms
+- 专业的研发项目管理软件
+  - [zentao安装说明](./TOOLS-zentao.md)
+  - 账户信息: zentaoadmin/Ken123

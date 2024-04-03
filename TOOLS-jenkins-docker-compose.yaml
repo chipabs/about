@@ -1,0 +1,18 @@
+services:
+  jenkins:
+    image: "jenkins/jenkins:lts-jdk17"
+    #image: "jenkinsci/blueocean:latest"
+    user: "root"
+    privileged: "true"
+    restart: "always"
+    container_name: "jenkins"
+    volumes:
+      - /usr/local/jenkins:/var/jenkins_home
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /usr/bin/docker:/user/bin/docker
+      - /usr/lib/x86_64-linux-gnu/libltdl.so.7:/usr/lib/x86_64-linux-gnu/libltdl.so.7
+      - /etc/docker/daemon.json:/etc/docker/daemon.json
+      - /usr/lib/jvm/java-1.8.0-openjdk-amd64:/usr/local/java/jdk1.8.0_161
+    ports:
+      - "8080:8080"
+      - "50000:50000"
