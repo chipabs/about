@@ -1,11 +1,13 @@
 # 环境和工具
 - Ubuntu 20: 操作系统
 - Docker & Docker Compose: 部署和运行环境，容器编排
+- Kubernetes: 容器编排
 - Jenkins: 开源CI&CD, 构建伟大，无所不能
 - Zentaopms: 禅道项目管理/文档 [docker compose yaml](./TOOLS-zentao.md)
-- Bandicam: 录视频录教程，备用（OBS，Captura，ApowerREC，QQ，Win+G快捷键，N卡录制）
 - github: 代码仓库/代码管理， [仓库地址](https://github.com/chipabs)
- 
+- Apifox: API 设计、开发、测试一体化协作平台， Apifox = Postman + Swagger + Mock + JMeter， [Apifox 官网](https://apifox.com/)
+- Bandicam: 录视频录教程，备用（OBS，Captura，ApowerREC，QQ，Win+G快捷键，N卡录制）
+
 # OS
 - ubuntu 20
   - Linux ideaSoft 5.15.0-97-generic #107~20.04.1-Ubuntu SMP Fri Feb 9 14:20:11 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux
