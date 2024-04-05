@@ -12,10 +12,15 @@
 
 > 2002 年开始接触的编程，一开始接触的是C/C++/VC++，开发过各种桌面软件。 后来从 06 年开始步入职场，3年多时间一直从事基于C++/VC++桌面软件开发，从 08 年开始转向基于 Java 的 Web 项目以及云计算方面的开发，期间做过金融类桌面软件，大数据开发，基于自然语言的搜索引擎开发，图形图像识别项目，股票交易系统，Crypto交易和行情软件开发，后来又转向了区块链相关的开发。 17 年开始自学了 Typescript + React + Node.js + Rust 的编码工作。18 年开始转向区块链行业的开发，主要使用 C/C++, Java, Rust, Go, Nodejs, Solidity等。
 
-## 我的网站和项目
-- 公司网站: 基于[Docusaurus](https://docusaurus.io/zh-CN/) 搭建
-- 社区: 论坛
-- 交易软件demo  [DEMO 1](https://docusaurus.io/zh-CN/)
+## 网站和项目
+- frank.me 个人网站
+- chipabs 软件工作室网站
+- aboutchips 硬件资讯 测评 数据 导购网站
+- 维修 笔记本/显卡/主板维修在线接单（网站，公众号，小程序二手商城，B站视频，Youtube视频，小红书，今日头条，知乎）
+- 交易系统，行情系统，量化策略 教学系统 Access by IP
+- ~~公司网站: 基于[Docusaurus](https://docusaurus.io/zh-CN/) 搭建~~
+- ~~社区: 论坛~~
+- ~~交易软件demo  [DEMO 1](https://docusaurus.io/zh-CN/)~~
 - ~~NLP和问答项目demo~~
 - ~~全栈开发demo~~
 - ~~其他开源软件项目demo~~
