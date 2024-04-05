@@ -26,8 +26,6 @@
 - 工作推荐
 
 ## 社交媒体
-- Twitter
-- TG
 - 小红薯
 - 抖音
 - 知乎
@@ -36,9 +34,31 @@
 - 微博
 - B站
 - Youtube
+- Twitter
+- TG
 
-## 我的常用工具
-- 1
+## 工具和服务
+- Ubuntu20 开发平台 服务器, 终端命令和系统管理
+- Jenkins 用于发布 变更管理
+- Github/gitlab 用于代码管理
+- Bandicam: 录视频录教程
+- Zentaopms: 项目管理 产品管理
+- 飞书: 消息、TODO列表、笔记、设计文档、其他（文档 多维表格 知识库 会议 OKR）
+- 个人邮箱: chipabsno1@outlook.com
+- G Suite 用于 @http://listennotes.com 电子邮件帐户、日历和其他 Google 服务。
+- MailChimp 发送每月电子邮件简报。
+- Amazon SES 用于发送交易邮件和营销邮件。
+- 自建技术社区 用于寻找承包人
+- Google Ads Manager 管理直销广告并跟踪绩效。
+- Carbon Ads 和 BuySellAds 用于备用广告。
+- Cloudflare 用于 DNS 管理、CDN 和防火墙。
+- Godaddy 和 Namecheap 用于域名。
+- ??? 用于从用户处获取资金（主要用于 API）。
+- Google speech-to-text API 用于语音转换。
+- ??? 用于健康保险。
+- ??? 为融资（SAFE）和雇佣承包人生成法律文件。
+- ??? 用于记账。
+- 1password 用于管理大量服务的登录凭证。
 
 ## 技术栈
 - 1
