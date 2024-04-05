@@ -16,8 +16,20 @@
 - frank.me 个人网站， 基于Docusaurus 搭建
 - chipabs 软件教学和软件工作室网站， 基于Docusaurus 搭建
 - aboutchips 硬件资讯 测评 数据 导购网站，Java/SpringBoot/Thymeleaf
-- 笔记本/显卡/主板 维修在线接单（网站，公众号，小程序二手商城，B站视频，Youtube视频，小红书，今日头条，知乎）
-- 交易系统，行情系统，量化策略 教学系统 Access by IP, React/Nextjs/Java/SpringBoot
+- 笔记本/显卡/主板 维修在线接单
+  - 网站
+  - 公众号
+  - 小程序二手商城
+  - 视频 B站，Youtube Channel
+  - 小红书
+  - 今日头条
+  - 知乎
+- 交易系统
+  - 行情系统
+  - 量化策略
+  - 教学系统
+  - 交易系统 
+  - Access by IP, React/Nextjs/Java/SpringBoot
 - ~~公司网站: 基于[Docusaurus](https://docusaurus.io/zh-CN/) 搭建~~
 - ~~社区: 论坛~~
 - ~~交易软件demo  [DEMO 1](https://docusaurus.io/zh-CN/)~~
