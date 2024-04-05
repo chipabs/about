@@ -45,7 +45,7 @@
 - Zentaopms: 项目管理 产品管理
 - 飞书: 消息、TODO列表、笔记、设计文档、其他（文档 多维表格 知识库 会议 OKR）
 - 个人邮箱: chipabsno1@outlook.com
-- G Suite 用于 @http://listennotes.com 电子邮件帐户、日历和其他 Google 服务。
+- G Suite 用于 企业电子邮件帐户、日历和其他 Google 服务。
 - MailChimp 发送每月电子邮件简报。
 - Amazon SES 用于发送交易邮件和营销邮件。
 - 自建技术社区 用于寻找承包人
