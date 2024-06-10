@@ -15,6 +15,9 @@
 ## 网站和项目
 - chipabs.me 个人网站， 基于 Docusaurus 搭建
 - 软件开发工作室网站， 基于 Tailwind CSS + Nextjs 模板搭建
+  - 全栈技术课程， 基于 Docusaurus->Docs 搭建
+  - 全栈技术课程配套代码: 交易系统 + 后台管理系统
+  - 技术笔记（多年经验总结涵盖企业技术体系）， 基于 Docusaurus->Docs 搭建
 - 电脑门店进销存Saas系统， 基于 Tailwind CSS + Nextjs + Nestjs + Typeorm 搭建
 - 电脑和手机销售和维修网站， 基于 Java/SpringBoot/Thymeleaf 搭建
   - 知乎，今日头条，闲鱼，淘宝，小红书，b站，抖音: 笔记本/显卡/主板 维修在线接单
